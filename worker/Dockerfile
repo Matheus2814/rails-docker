@@ -2,7 +2,7 @@ FROM ruby:2.6.6
 
 RUN apt update
 RUN apt upgrade -y
-RUN apt insatll lsb-base lsb-release
+RUN apt install lsb-base lsb-release
 
 RUN sudo apt install mysql-server mysql-client
 RUN  sudo mysql -uroot -p \  ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456789';
